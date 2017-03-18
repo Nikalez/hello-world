@@ -1,0 +1,15 @@
+3) (4p) We have opened a restaurant, but we only have one chef. 
+In this restaurant, we use queues to organize the orders that come in. 
+Each order is represented by two numbers: the time t (at which the client comes in and places the order) and the duration d (time taken for our chef to prepare the dish). The orders received will be sorted by their arrival time t. 
+When the dish is ready, we eliminate the order from our queue and the chef begins working on the next (if there is one). 
+The restaurant closes at the time T.  
+a) (1p) Choose a convenient method of storing the orders (arrival time and duration). 
+Bonus for using a struct or a class. Read from the keyboard two numbers - N and T - and then the N orders. 
+b) (1p) Print all the times at which the queue is empty and our chef can take a breather. As an alternative, print these times as intervals. Only print values inside the working time of the restaurant (before time T). 
+c) (0.5p) Print the maximum duration our chef has to work on a single order. 
+d) (1p) For each order, print the theoretical completion time (that the client hoped for) and the actual completion time (when our chef will finally complete the client’s dish). 
+e) (0.5p) Determine if there are orders that remain incomplete after the closing time of the restaurant.  
+Ex: N = 6, T = 20 and the orders are: t = 0, d =5 t = 1, d = 3 t = 10, d = 3 t = 11, d = 2 t = 12, d = 4 t = 18, d =5 
+Order 1: expected completion time = 5, actual completion time = 5; 
+Order 2: expected completion time = 4, actual completion time = 8; The chef takes a break (the queue is empty) between the times 8 and 10  
+We have T = 20. After computing the orders, we find out that the last one will be finished at t=24. Therefore, we have orders which are completed after the closing of the restaurant
